@@ -22,11 +22,16 @@ My ft_printf() function supports several format specifiers, including:
 
 ## 2. Logic
 
-## 3 How to run
+
+
+## 3 How to creat libftprintf.a library
+
+git clone repository into your project
 ```
 git clone https://github.com/dhuss42/ft_printf.git ft_printf
 cd ft_printf
 make
 ```
 
-add 
+add ft_printf.h to your files or header file
+# include "ft_printf/ft_printf.h"
