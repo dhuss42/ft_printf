@@ -34,4 +34,7 @@ make
 ```
 
 add ft_printf.h to your files or header file  
-```# include "ft_printf/ft_printf.h"```
+add ft_printf.h to your files or header file
+```
+# include "ft_printf/ft_printf.h"
+```
