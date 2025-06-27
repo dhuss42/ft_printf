@@ -33,5 +33,5 @@ cd ft_printf
 make
 ```
 
-add ft_printf.h to your files or header file
+add ft_printf.h to your files or header file  
 ```# include "ft_printf/ft_printf.h"```
