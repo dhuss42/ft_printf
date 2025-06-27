@@ -13,27 +13,27 @@ For this project, I set out to reimplement printf(), one of the most commonly us
 
 My ft_printf() function supports several format specifiers, including:
 
-%c for characters  
-%s for strings  
-%p for pointers (in hexadecimal format)  
-%d and %i for integers  
-%u for unsigned integers  
-%x and %X for hexadecimal numbers (lowercase and uppercase)  
-%% to print a percent sign  
+`%c` for characters  
+`%s` for strings  
+`%p` for pointers (in hexadecimal format)  
+`%d` and `%i` for integers  
+`%u` for unsigned integers  
+`%x` and `%X` for hexadecimal numbers (lowercase and uppercase)  
+`%%` to print a percent sign  
 
 ## 2. Varadic functions
 
 Variadic functions can accept a variable number of arguments. While the first arguments are fixed, the remaining arguments can vary in number and type.
 
-To handle these variable arguments, the <stdarg.h> library provides macros and the va_list type.
+To handle these variable arguments, the `<stdarg.h>` library provides macros and the va_list type.  
 
-Use the va_list type to declare a variable that will store the information needed to retrieve the additional arguments.
+Use the `va_list` type to declare a variable that will store the information needed to retrieve the additional arguments.  
 
-This macro initializes the va_list to start retrieving arguments from the variable arguments section. The second argument must be the last fixed parameter in your function’s signature.
+`va_start(list, last_fixed_arg)` initializes the va_list to start retrieving arguments from the variable arguments section. The second argument must be the last fixed parameter in your function’s signature.
 
-This macro retrieves the next argument from the va_list. It must be called repeatedly to access each argument.
+`va_arg(list, type)` retrieves the next argument from the va_list. It must be called repeatedly to access each argument.
 
-Once all arguments have been processed, you must call va_end() to clean up the va_list. This ensures any resources used by va_list are properly released.
+Once all arguments have been processed, you must call `va_end(list)` to clean up the va_list. This ensures any resources used by va_list are properly released.
 
 ## 3. Logic 
 
