@@ -12,13 +12,13 @@ For this project, I set out to reimplement printf(), one of the most commonly us
 
 My ft_printf() function supports several format specifiers, including:
 
-%c for characters
-%s for strings
-%p for pointers (in hexadecimal format)
-%d and %i for integers
-%u for unsigned integers
-%x and %X for hexadecimal numbers (lowercase and uppercase)
-%% to print a percent sign
+%c for characters  
+%s for strings  
+%p for pointers (in hexadecimal format)  
+%d and %i for integers  
+%u for unsigned integers  
+%x and %X for hexadecimal numbers (lowercase and uppercase)  
+%% to print a percent sign  
 
 ## 2. Logic
 
